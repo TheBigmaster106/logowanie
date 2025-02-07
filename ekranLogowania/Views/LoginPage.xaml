@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ekranLogowania.Views.LoginPage"
+             Title="Logowanie">
+    <ScrollView>
+        <VerticalStackLayout Padding="30" Spacing="10" VerticalOptions="Center">
+            <Label Text="Wprowadz swoje dane logowania" FontSize="20" HorizontalOptions="Center" />
+            <Entry x:Name="EmailEntry" Placeholder="E-mail" Keyboard="Email" />
+            <Entry x:Name="PasswordEntry" Placeholder="Haslo" IsPassword="True" />
+            <Button Text="Zaloguj sie" Clicked="OnLoginButtonClicked" />
+            <Label x:Name="TokenLabel" Text="" TextColor="Green" HorizontalOptions="Center" />
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
